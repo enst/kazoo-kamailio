@@ -1,7 +1,7 @@
 FROM bingli/kazoo-base
 MAINTAINER Bing Li <bingli1000@gmail.com>
 
-RUN yum install -y kazoo-kamailio
+RUN yum -y --nogpgcheck localinstall http://repo.2600hz.com/Packages/Kazoo-Kamailio-4.2/CentOS_6/x86_64/4.2.3/kazoo-kamailio-4.2.3-16.el6.x86_64.rpm
 
 ADD entrypoint.sh /root/
 
