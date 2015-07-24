@@ -2,5 +2,5 @@
 
 service kamailio start
 
-exec "$@"
+exec /bin/bash "$@"
 
